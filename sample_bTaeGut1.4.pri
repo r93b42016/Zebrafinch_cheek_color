@@ -1,0 +1,13 @@
+Chuong555 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong555_ST_e_opt.gtf
+Chuong557 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong557_ST_e_opt.gtf
+Chuong558 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong558_ST_e_opt.gtf
+Chuong559 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong559_ST_e_opt.gtf
+Chuong560 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong560_ST_e_opt.gtf
+Chuong561 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong561_ST_e_opt.gtf
+Chuong562 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong562_ST_e_opt.gtf
+Chuong564 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong564_ST_e_opt.gtf
+Chuong649 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong649_ST_e_opt.gtf
+Chuong651788 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong651788_ST_e_opt.gtf
+Chuong652791 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong652791_ST_e_opt.gtf
+Chuong653792 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong653792_ST_e_opt.gtf
+Chuong654787 /scratch1/cchen635/GW_finchcolor/GW_String_opt/Chuong654787_ST_e_opt.gtf

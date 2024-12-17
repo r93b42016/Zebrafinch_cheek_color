@@ -1,0 +1,143 @@
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+40573963 reads; of these:
+  40573963 (100.00%) were unpaired; of these:
+    2938478 (7.24%) aligned 0 times
+    32706900 (80.61%) aligned exactly 1 time
+    4928585 (12.15%) aligned >1 times
+92.76% overall alignment rate
+[bam_sort_core] merging from 18 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+40567583 reads; of these:
+  40567583 (100.00%) were unpaired; of these:
+    3147979 (7.76%) aligned 0 times
+    32454201 (80.00%) aligned exactly 1 time
+    4965403 (12.24%) aligned >1 times
+92.24% overall alignment rate
+[bam_sort_core] merging from 18 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+46860296 reads; of these:
+  46860296 (100.00%) were unpaired; of these:
+    3625380 (7.74%) aligned 0 times
+    38385247 (81.91%) aligned exactly 1 time
+    4849669 (10.35%) aligned >1 times
+92.26% overall alignment rate
+[bam_sort_core] merging from 20 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+36329115 reads; of these:
+  36329115 (100.00%) were unpaired; of these:
+    2846968 (7.84%) aligned 0 times
+    29092222 (80.08%) aligned exactly 1 time
+    4389925 (12.08%) aligned >1 times
+92.16% overall alignment rate
+[bam_sort_core] merging from 16 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+33434416 reads; of these:
+  33434416 (100.00%) were unpaired; of these:
+    2488926 (7.44%) aligned 0 times
+    27458463 (82.13%) aligned exactly 1 time
+    3487027 (10.43%) aligned >1 times
+92.56% overall alignment rate
+[bam_sort_core] merging from 14 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+38063696 reads; of these:
+  38063696 (100.00%) were unpaired; of these:
+    2639173 (6.93%) aligned 0 times
+    32034321 (84.16%) aligned exactly 1 time
+    3390202 (8.91%) aligned >1 times
+93.07% overall alignment rate
+[bam_sort_core] merging from 16 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+46362581 reads; of these:
+  46362581 (100.00%) were unpaired; of these:
+    3303185 (7.12%) aligned 0 times
+    37657137 (81.22%) aligned exactly 1 time
+    5402259 (11.65%) aligned >1 times
+92.88% overall alignment rate
+[bam_sort_core] merging from 21 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+35976019 reads; of these:
+  35976019 (100.00%) were unpaired; of these:
+    2779142 (7.72%) aligned 0 times
+    29241378 (81.28%) aligned exactly 1 time
+    3955499 (10.99%) aligned >1 times
+92.28% overall alignment rate
+[bam_sort_core] merging from 16 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+38488747 reads; of these:
+  38488747 (100.00%) were unpaired; of these:
+    2767997 (7.19%) aligned 0 times
+    32425423 (84.25%) aligned exactly 1 time
+    3295327 (8.56%) aligned >1 times
+92.81% overall alignment rate
+[bam_sort_core] merging from 16 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+46658970 reads; of these:
+  46658970 (100.00%) were unpaired; of these:
+    3345237 (7.17%) aligned 0 times
+    30546640 (65.47%) aligned exactly 1 time
+    12767093 (27.36%) aligned >1 times
+92.83% overall alignment rate
+[bam_sort_core] merging from 31 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+50123852 reads; of these:
+  50123852 (100.00%) were unpaired; of these:
+    3489911 (6.96%) aligned 0 times
+    31446851 (62.74%) aligned exactly 1 time
+    15187090 (30.30%) aligned >1 times
+93.04% overall alignment rate
+[bam_sort_core] merging from 3 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+51776822 reads; of these:
+  51776822 (100.00%) were unpaired; of these:
+    3682195 (7.11%) aligned 0 times
+    34514765 (66.66%) aligned exactly 1 time
+    13579862 (26.23%) aligned >1 times
+92.89% overall alignment rate
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+  File "/spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/hisat2-2.2.0-u5mznu7/bin/hisat2_read_statistics.py", line 182
+    length_map = sorted(length_map.iteritems(), key=lambda (k,v):(v,k), reverse=True)
+                                                           ^
+SyntaxError: invalid syntax
+45685862 reads; of these:
+  45685862 (100.00%) were unpaired; of these:
+    3096302 (6.78%) aligned 0 times
+    28756072 (62.94%) aligned exactly 1 time
+    13833488 (30.28%) aligned >1 times
+93.22% overall alignment rate
+[bam_sort_core] merging from 32 files and 1 in-memory blocks...
