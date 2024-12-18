@@ -118,29 +118,39 @@ plotPCA(rld, intgroup = "condition",
 
 
 ### Volcano plot with "significant" genes labeled ###
-#load DESeq2 opt
 
 library(ggplot2)
 library("RColorBrewer")
+library(ggrepel)
+library(dplyr)
 ##https://www.rpubs.com/Knight95/volcano
 
-res <- read.table(file.choose(), header=TRUE, row.names="gene_id", sep=",")
+#load DESeq2 opt 
+res <- read.table(file.choose(), header=TRUE, sep=",")
 head(res)
 
-
+#define expression
 res$expression = ifelse(res$padj < 0.05 & abs(res$log2FoldChange) >= 1, 
-                      ifelse(res$log2FoldChange> 1 ,'R_up','G_up'),
+                      ifelse(res$log2FoldChange> 1 ,'S_up','C_up'),
                       'None')
 
-p <- ggplot(data = res, 
+#optional: make labels
+res$label <- factor(res$gene_id, levels = c("SHOX", "HOXA6","HOXB2", "HOXA2","PAX1","HOXD4","PAX6","HOXA5","SATB1","HOXA7","PITX1","SHOX2"))
+
+
+#make plot
+ggplot(data = res, 
             aes(x = log2FoldChange, 
                 y = -log10(padj), 
                 colour=expression,
-                label = res$label)) +
+                label = label)) +
+  geom_text_repel(data = res %>% 
+                    filter(gene_id %in% c("SHOX", "HOXA6","HOXB2", "HOXA2","PAX1","HOXD4","PAX6","HOXA5","SATB1","HOXA7","PITX1","SHOX2")),
+                  aes(label = gene_id, x = log2FoldChange, y = -log10(padj)), box.padding = unit(.7, "lines"),hjust= 0.30) +
   geom_point(alpha=0.4, size=3.5) +
   scale_color_manual(values=c("blue","grey", "red"))+
   xlim(c(-15, 15)) +
-  ylim(c(0,50)) +
+  ylim(c(0,30)) +
   geom_vline(xintercept=c(-1,1),lty=4,col="black",lwd=0.8) +
   geom_hline(yintercept = 1.301,lty=4,col="black",lwd=0.8) +
   labs(x="log2FoldChange",
@@ -150,7 +160,32 @@ p <- ggplot(data = res,
   theme(plot.title = element_text(hjust = 0.5), 
         legend.position="right", 
         legend.title = element_blank())
-p
 
 
 
+res$delabel <- ifelse(res$gene_id %in% c("SHOX", "HOXA6","HOXB2", "HOXA2",
+                                           "PAX1","HOXD4","PAX6","HOXA5",
+                                           "SATB1","HOXA7","PITX1","SHOX2"), res$gene_id, NA)
+head(res)
+ggplot(data = res, 
+       aes(x = log2FoldChange, 
+           y = -log10(padj), 
+           colour=expression,
+           label = delabel)) +
+  geom_point(size=2.5) +
+  scale_color_manual(values=c("red","grey", "blue"))+
+  xlim(c(-10, 10)) +
+  ylim(c(0,25)) +
+  geom_vline(xintercept=c(-1,1),lty=4,col="grey",lwd=0.8) +
+  geom_hline(yintercept = 1.301,lty=4,col="grey",lwd=0.8) +
+  labs(x="log2FoldChange",
+       y="-log10 (padj)",
+       title="cheeks vs scalps")  +
+  theme_bw()+
+  theme(axis.text = element_text(
+    color="black", 
+    size=20))+
+  geom_text_repel(max.overlaps = Inf, color="black")+
+  theme(plot.title = element_text(hjust = 0.5), 
+        legend.position="right", 
+        legend.title = element_blank())
