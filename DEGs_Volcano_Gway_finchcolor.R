@@ -134,35 +134,9 @@ res$expression = ifelse(res$padj < 0.05 & abs(res$log2FoldChange) >= 1,
                       ifelse(res$log2FoldChange> 1 ,'S_up','C_up'),
                       'None')
 
-#optional: make labels
-res$label <- factor(res$gene_id, levels = c("SHOX", "HOXA6","HOXB2", "HOXA2","PAX1","HOXD4","PAX6","HOXA5","SATB1","HOXA7","PITX1","SHOX2"))
 
 
 #make plot
-ggplot(data = res, 
-            aes(x = log2FoldChange, 
-                y = -log10(padj), 
-                colour=expression,
-                label = label)) +
-  geom_text_repel(data = res %>% 
-                    filter(gene_id %in% c("SHOX", "HOXA6","HOXB2", "HOXA2","PAX1","HOXD4","PAX6","HOXA5","SATB1","HOXA7","PITX1","SHOX2")),
-                  aes(label = gene_id, x = log2FoldChange, y = -log10(padj)), box.padding = unit(.7, "lines"),hjust= 0.30) +
-  geom_point(alpha=0.4, size=3.5) +
-  scale_color_manual(values=c("blue","grey", "red"))+
-  xlim(c(-15, 15)) +
-  ylim(c(0,30)) +
-  geom_vline(xintercept=c(-1,1),lty=4,col="black",lwd=0.8) +
-  geom_hline(yintercept = 1.301,lty=4,col="black",lwd=0.8) +
-  labs(x="log2FoldChange",
-       y="-log10 (padj)",
-       title="MCR vs FCG")  +
-  theme_bw()+
-  theme(plot.title = element_text(hjust = 0.5), 
-        legend.position="right", 
-        legend.title = element_blank())
-
-
-
 res$delabel <- ifelse(res$gene_id %in% c("SHOX", "HOXA6","HOXB2", "HOXA2",
                                            "PAX1","HOXD4","PAX6","HOXA5",
                                            "SATB1","HOXA7","PITX1","SHOX2"), res$gene_id, NA)
