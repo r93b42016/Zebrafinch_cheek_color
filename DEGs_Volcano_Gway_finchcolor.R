@@ -140,12 +140,16 @@ res$expression = ifelse(res$padj < 0.05 & abs(res$log2FoldChange) >= 1,
 res$delabel <- ifelse(res$gene_id %in% c("SHOX", "HOXA6","HOXB2", "HOXA2",
                                            "PAX1","HOXD4","PAX6","HOXA5",
                                            "SATB1","HOXA7","PITX1","SHOX2"), res$gene_id, NA)
+
+head(res)
+
 head(res)
 ggplot(data = res, 
        aes(x = log2FoldChange, 
            y = -log10(padj), 
            colour=expression,
-           label = delabel)) +
+           label = delabel
+           )) +
   geom_point(size=2.5) +
   scale_color_manual(values=c("red","grey", "blue"))+
   xlim(c(-10, 10)) +
@@ -155,11 +159,11 @@ ggplot(data = res,
   labs(x="log2FoldChange",
        y="-log10 (padj)",
        title="cheeks vs scalps")  +
-  theme_bw()+
+  theme_bw(base_size = 16)+
   theme(axis.text = element_text(
-    color="black", 
-    size=20))+
-  geom_text_repel(max.overlaps = Inf, color="black")+
+    color="black"))+
+  geom_text_repel(max.overlaps = Inf, color="black",size=4)+
   theme(plot.title = element_text(hjust = 0.5), 
         legend.position="right", 
         legend.title = element_blank())
+

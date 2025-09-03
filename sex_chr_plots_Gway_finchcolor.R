@@ -28,7 +28,7 @@ cheek<-select(merge, chr,chr_sum, Gene)%>%
 
 head(cheek)
 
-#load S4 file MCRvsFCG
+#load S4 file MSGvsFSG
 input_2 <- read.table(file.choose(), header=T, sep=",")
 head(input_2)
 
